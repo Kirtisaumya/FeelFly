@@ -1,30 +1,39 @@
 import React from 'react'
+import { FaFacebook, FaInstagramSquare, FaTiktok } from 'react-icons/fa'
 
 const Hero = () => {
   return (
     <>
-    <div className='hero border-b-2 flex justify-center'>
-      
-          <div className='home-left flex w-3/12 items-center'>
-            
-            <div className='left-contents flex gap-6 flex-col'>
-              <div className='text-5xl text-center text-slate-700 font-serif font-extrabold'>
-                Colourful Series 
-              </div>
-              <div className='text-2xl text-center text-slate-700 font-serif font-normal'>
-                Define Your Unique Style.
-              </div>
-            </div>
-            
-          </div>
+    <div className='main h-full flex border-b-2'>
+      <div className='main-socials w-1/6 flex flex-col justify-center'>
+        <div className='border-2 h-11 w-11 flex justify-center items-center'>
+          <FaInstagramSquare className='text-gray-700' size={32}/>
+        </div>
+        <div className='border-2 h-11 w-11 flex justify-center items-center'>
+          <FaFacebook className='text-gray-700' size={32}/>
+        </div>
+        <div className='border-2 h-11 w-11 flex justify-center items-center'>
+          <FaTiktok className='text-gray-700' size={32}/>
+        </div>
+      </div>
+      <div className='main-left h-full w-1/3 flex items-center justify-center'>
+        <div className='left-contents flex flex-col gap-8'>
+        <div className='text-gray-700 font-serif text-center flex flex-1 text-7xl'>
+            FEEL FLY SERIES
+        </div>
+        <div className='text-xl text-gray-700 text-center'>
+          Unify Your Style, Embrace Advaya
+        </div>
+        </div>
+      </div>
 
-          <div className='home-right w-3/12'>
+      <div className='right-contents h-full w-1/2 flex items-end'>
 
-            <div className='home-right flex items-end h-full'>
-              <img className='h-full w-full' src='assets/model1.png'/>
-            </div>
-            
-          </div>
+        <div className='right-image h-full'>
+          <img className='image-model h-full' src='assets/model1.png'/>
+        </div>
+
+      </div>
 
     </div>
     </>

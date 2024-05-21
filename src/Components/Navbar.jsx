@@ -5,26 +5,23 @@ import { HiOutlineShoppingBag } from 'react-icons/hi'
 const Navbar = () => {
   return (
     <>
-    <div className='navbar flex w-full items-center justify-between fixed py-6 px-16 border-b-2 bg-white'>
-
-        <div className='cursor-pointer left-logo font-serif text-slate-700 text-xl font-extrabold'>
-            Advaya
-        </div>
-
-        <div className='left-contents flex gap-4'>
-                 
-            <div className='text-lg cursor-pointer text-slate-700 font-serif font-bold border-r-2 pr-4'>Gallery</div>
-                              
-            <div className='flex cursor-pointer items-center gap-2 font-serif  text-lg border-r-2 pr-4  text-slate-700 font-bold'>
-                <HiOutlineShoppingBag color='text-slate-700' size={24}/>
-                Shop
-            </div>
-                
-            <div className='flex cursor-pointer items-center font-serif text-lg text-slate-700 font-bold '>
-                <FaRegEnvelope size={24}/>
+    <div className='navbar border-b-2 flex justify-between items-center px-20 py-6'>
+        
+            <div className='navbar-logo text-gray-700 font-serif font-bold'>
+                ADVAYA
             </div>
 
-        </div>    
+            <div className='navbar-contents flex gap-5'>
+                <div className='contents-shop pr-4 border-r-2 flex gap-2 text-gray-700 font-serif items-center'>
+                    <HiOutlineShoppingBag className='text-gray-700 font-serif'/>
+                    Shop
+                    </div>
+                <div className='contents-gallery pr-4 border-r-2 text-gray-700 font-serif'>Gallery</div>
+                <div className='contents-contact pr-4 border-r-2 flex items-center'>
+                    <FaRegEnvelope className='text-gray-700 font-serif'/>
+                    </div>
+            </div>
+        
     </div>
     </>
   )

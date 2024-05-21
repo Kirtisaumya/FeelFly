@@ -5,10 +5,10 @@ import Navbar from './Components/Navbar';
 function App() {
   return ( 
     <>
-    <div className="App">
+    <div className="App flex flex-col h-screen">
       <Navbar/>
       <Hero/>
-      <Hero/>
+      
     </div>
     </>
   );
